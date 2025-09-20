@@ -1,5 +1,39 @@
-git 是可以多人协作 同时他可以对代码的提交做一个版本控制
+### 仓库地址
 
+>   仓库地址：[https://gitee.com/dancefunk/demo](https://gitee.com/dancefunk/demo)
+
+### 教程文档
+
+>   [https://www.quickask.net/](https://www.quickask.net/)
+
+### 成果递交资料
+
+```
+第一周：Web响应式布局项目
+第二周：1.PythonWeb搭建 2.成果展示
+```
+
+```
+最后一天递交的
+
+1.每天写一篇日记
+2.实训的源码
+3.实训总结报告
+4.PPT
+
+实训项目的源码：
+1.PythonWeb(第三天的时候去弄)
+2.Web响应式布局项目
+
+要求：
+1.这两个项目的源码要放到自己的git仓库上面，仓库链接放到PPT成果展示里面
+2.两个项目要运行好，然后压缩包，在最后一天递交的时候 一起提交过来
+```
+
+### Git版本控制工具
+
+```
+git 是可以多人协作 同时他可以对代码的提交做一个版本控制
 
 注册gitee的账号: https://gitee.com
 
@@ -8,6 +42,9 @@ git 是可以多人协作 同时他可以对代码的提交做一个版本控制
 对git去进行一些基础的配置
 
 win + R 打开 cmd 命令行窗口 设置
+```
+
+### 安装后的配置操作
 
 ```
 检查 git 是否有安装成功
@@ -33,7 +70,9 @@ git config --global --add safe.directory "*"
 git config list
 ```
 
+### 克隆仓库
 
+```
 克隆别人的仓库和自己的仓库是一样的步骤
 git clone 仓库的地址
 https://gitee.com/dancefunk/demo.git
@@ -41,9 +80,12 @@ https://gitee.com/dancefunk/demo.git
 克隆仓库一定要去到你指定的文件夹中，右键点击菜单“open Git bash here”
 
 对本地的仓库去进行操作
+```
 
-进入到仓库文件夹
-cd demo
+### 进入到仓库文件夹
+
+>   cd demo
+
 
 ### 查看本地仓库是否有变化
 
@@ -86,56 +128,3 @@ Changes to be committed:
 
 
 
-
-
-
-
-
------------------------------------------------------------------
-python 学了一个学期 就是一些基础语法
-mysql sql 增删查改
-
-python-web web前端方面的内容
-html + css + 
-
-web方面的开发的
-
-后端语言
-python
-java
-php
-go
-
-
-开发岗位：
-    WEB全栈开发： 
-        WEB前端开发:
-        WEB后端开发: java python go php nodejs
-
-
-
-1/响应式项目(响应式界面设计) 重点
-
-2/python-web 以搭建为主 能够运行起来 有成果展示
-flask
-mysql
-前端
-
-响应式布局：
-html 超文本标记语言
-css  层叠样式表
-javascript web的脚本语言
-
-
-margin-left : 左边距
-
-
-动画3个大的概念：
-    变换样式 transform
-    过渡样式 transition 从很生硬变化的效果 变成平缓的效果
-    自定义动画样式 animation
-
-transition
-
-
-transform
