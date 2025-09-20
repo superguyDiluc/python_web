@@ -114,6 +114,16 @@ Changes to be committed:
         new file:   demo1.html
 ```
 
+### 提交操作
+
+> git commit -m '备注的信息'
+
+```
+[master d547a8e] 首次提交文件
+ 1 file changed, 45 insertions(+), 56 deletions(-)
+ rename "\350\256\262\344\271\211.md" => README.md (64%)
+```
+
 
 
 
