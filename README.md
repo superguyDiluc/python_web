@@ -66,6 +66,9 @@ git config --global core.filemode false
 git忽略所有文件的安全限制
 git config --global --add safe.directory "*"
 
+git处理换行符的设置
+git config --global core.autocrlf true
+
 查看自己写的对不对
 git config list
 ```

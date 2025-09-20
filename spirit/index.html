@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式布局</title>
+
+    <!-- 引入bootstrap插件 -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <!-- 引入动画库 -->
+    <link rel="stylesheet" href="./assets/css/animate.min.css" />
+
+    <!-- 引入重写文件 重置html元素的自带的样式 -->
+    <link rel="stylesheet" type="text/less" href="./assets/css/reset.less" />
+
+    <!-- 引入自己的样式文件 -->
+    <link rel="stylesheet" type="text/less" href="./assets/css/index.less" />
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <!-- 左侧的元素 -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+                <a class="navbar-brand wow bounceInDown" href="javasciprt:void(0)">Spirit8</a>
+            </div>
+            
+            <!-- 导航元素 -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="wow bounceInDown" data-wow-delay="0ms" href="javascript:void(0)">HOME</a></li>
+                    <li><a class="wow bounceInDown" data-wow-delay="100ms" href="javascript:void(0)">About</a></li>
+                    <li><a class="wow bounceInDown" data-wow-delay="150ms" href="javascript:void(0)">SERVICES</a></li>
+                    <li><a class="wow bounceInDown" data-wow-delay="200ms" href="javascript:void(0)">portfolio</a></li>
+                    <li><a class="wow bounceInDown" data-wow-delay="150ms" href="javascript:void(0)">testimonials</a></li>
+                    <li><a class="wow bounceInDown" data-wow-delay="300ms" href="javascript:void(0)">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- banner图 -->
+    <div class="banner">
+        <div class="title wow flip">
+            wELCOME on <span>spirit8</span>
+        </div>
+
+        <div class="subtitle wow lightSpeedIn">
+            We are a digital agency with <span>years of experience</span> and with <span>extraordinary people</span>
+        </div>
+
+        <div class="more wow bounceIn">
+            <a href="javascript:void(0)">↓</a>
+        </div>
+    </div>
+</body>
+</html>
+<!-- 依赖jquery -->
+<script src="./assets/js/jquery.min.js"></script>
+
+<!-- 引入bootstrap插件脚本 -->
+<script src="./assets/js/bootstrap.min.js"></script>
+
+<!-- 引入less 编译css的一个插件 -->
+<script src="./assets/js/less.min.js"></script>
+
+<!-- 引入瀑布流插件的js文件 -->
+<script src="./assets/js/wow.min.js"></script>
+
+<script>
+    // 实例化瀑布流插件
+    new WOW().init()
+</script>
