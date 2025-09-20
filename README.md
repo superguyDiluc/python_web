@@ -124,6 +124,32 @@ Changes to be committed:
  rename "\350\256\262\344\271\211.md" => README.md (64%)
 ```
 
+### 推送到远程的仓库
+
+> git push 远程仓库的名字 分支的名字
+
+```
+界面上会弹框出来，让你输入账号和密码，就是gitee这个你注册账号密码
+git push origin master
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 2.03 KiB | 2.03 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Powered by GITEE.COM [1.1.5]
+remote: Set trace flag 1547f6a6
+To https://gitee.com/dancefunk/demo.git
+   6c4339e..48fd1f6  master -> master
+```
+
+### 简写操作
+
+```
+git add . && git commit -m '备注信息' && git push origin master
+```
+
 
 
 
