@@ -368,3 +368,160 @@ html{
     }
   }
 }
+
+// 联系我们
+.contact{
+  padding:6em 0em;
+
+  // 标题
+  .title{
+    width:80%;
+    margin:0 auto;
+    font-size:3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom:.8em;
+    margin-bottom:1em;
+    font-family: OSLight;
+
+    // 强制在一行显示
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  // 段落
+  .desc{
+    width:85%;
+    font-family: OSLight;
+    font-size:1.2em;
+    margin:0 auto;
+    text-align: center;
+    margin-bottom:6em;
+  }
+
+  // 表单
+  .register{
+    width:100%;
+
+    .top{
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom:1em;
+
+      .item{
+        width:49%;
+
+        h5{
+          font-size:1.2em;
+          margin-bottom:.2em;
+          color: #797979;
+          
+
+          sup{
+            color:red;
+            font-size:100%;
+            top:0;
+          }
+        }
+
+        input{
+          width:100%;
+          height:2em;
+          line-height:2em;
+          font-size:1.2em;
+        }
+      }
+    }
+
+    .bottom{
+      width:100%;
+      margin-bottom:1em;
+
+      h5{
+        font-size:1.2em;
+        margin-bottom:.2em;
+        color: #797979;
+
+        sup{
+          color:red;
+          font-size:100%;
+          top:0;
+        }
+      }
+
+      textarea{
+        display: block;
+        width:100%;
+        height:14em;
+        font-size:1.2em;
+      }
+    }
+
+    .send{
+      width:100%;
+      text-align: right;
+
+      button{
+        width:13em;
+        height:3em;
+        line-height:3em;
+        color:#fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSBold;
+        font-size:1.2em;
+        background: #fcac45;
+        border:0px;
+
+        transition: all linear .3s;
+
+        &:hover{
+          transform: translateY(-10px);
+          box-shadow: 0px 20px 10px 1px #d7d7d7;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width:600px){
+    &{
+      padding:6em 0em 3em;
+
+      .title{
+        font-size:2em;
+      }
+
+      .desc{
+        width:95%;
+      }
+
+      .register{
+        .top{
+          display: block;
+
+          .item{
+            width:100%;
+            margin-bottom:1.5em;
+          }
+        }
+
+        .send{
+          text-align: center;
+
+          button{
+            width:16em;
+          }
+        }
+      }
+    }
+  }
+}
