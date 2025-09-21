@@ -264,6 +264,107 @@ html{
 
 // 团队team
 .team{
-  height:50em;
   background:#111111;
+  padding:6em 0em;
+  color:#fff;
+
+  .title{
+    font-size:3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom:.8em;
+    margin-bottom:2.5em;
+    font-family: OSLight;
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  .list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:5em;
+
+    .item{
+      width:23%;
+
+      .cover{
+        width:70%;
+        margin:0 auto;
+        border-radius: 100px;
+        overflow: hidden;
+        margin-bottom:1em;
+
+        transition:all linear .3s;
+
+        &:hover{
+          transform:translateY(-10px);
+          box-shadow: 0px 20px 10px 10px #797979;
+        }
+      }
+
+      .box{
+        text-align: center;
+
+        p:first-child{
+          font-size:1.3em;
+          font-family: OSBold;
+        }
+
+        p:nth-child(2){
+          margin-bottom:2em;
+        }
+      }
+    }
+  }
+
+  .more{
+    width:100%;
+    text-align: center;
+
+    span{
+      display: inline-block;
+      width:1em;
+      height:1em;
+      background:#fff;
+      transition: all linear .3s;
+      cursor: pointer;
+      margin-right:1em;
+
+      &:hover{
+        background:#fcac45;
+      }
+    }
+  }
+
+  // 最大为600px的时候 改成垂直的排列方式
+  @media screen and (max-width:600px){
+    &{
+      padding:6em 0em 3em;
+    }
+
+    .list{
+      display: block;
+      margin-bottom:3em;
+
+      .item{
+        width:100%;
+        display: flex;
+        margin-bottom:1em;
+
+        .cover{
+          border-radius: 0px;
+          width:50%;
+          margin-right:2%;
+        }
+
+        .box{
+          text-align: left;
+        }
+      }
+    }
+  }
 }
