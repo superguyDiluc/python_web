@@ -147,6 +147,16 @@ To https://gitee.com/dancefunk/demo.git
    6c4339e..48fd1f6  master -> master
 ```
 
+### 拉取最新的代码
+
+>  git pull origin master
+
+```
+From https://gitee.com/dancefunk/demo
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+```
+
 ### 简写操作
 
 ```

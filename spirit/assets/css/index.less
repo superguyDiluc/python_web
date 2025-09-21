@@ -1,11 +1,25 @@
+// 让锚点跳转链接平缓
+html{
+  scroll-behavior: smooth;
+}
+
 // 重新定义导航元素 覆盖bootstrap框架自带的样式
 .navbar{
+  // 让导航栏紧贴着浏览器窗口
+  position: sticky;
+  left:0;
+  top:0;
+  // 层级深度
+  z-index:10;
+
+
   border-radius: 0px;
   border:0px;
   background:#111111;
   overflow: hidden;
   padding: .8em 0em;
   margin-bottom:0px;
+  width:100%;
 
   // 修改logo
   .navbar-brand{
@@ -107,4 +121,149 @@
       font-size:1.5em;
     }
   }
+}
+
+// 关于我们About
+.about{
+  padding:6em 0em;
+  color:#797979;
+
+  .container{
+    // 弹性布局
+    display: flex;
+
+    .left{
+      // 默认缩放为1 0不缩放
+      flex-shrink: .5;
+    }
+
+    .right{
+      width: 60%;
+
+      .subject{
+        margin-bottom:2em;
+
+        .small{
+          font-family: OSLight;
+          font-size:1.5em;
+          text-transform: uppercase;
+        }
+
+        .big{
+          width:95%;
+          font-family: OSLight;
+          font-size:2.5em;
+          text-transform: uppercase;
+          color:#000;
+
+          // 强制让文字只能在一行显示
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          span:first-child{
+            display: inline-block;
+            padding-bottom:.3em;
+            border-bottom:5px solid #fcac45;
+          }
+
+          span:last-child{
+            font-family: OSBold;
+          }
+        }
+      }
+
+      .desc{
+        color: #797979;
+        font-size:1.2em;
+        font-family: OSLtalic;
+        margin-bottom:2em;
+      }
+
+      .list{
+        margin-bottom:2em;
+
+        li{
+          font-size:1.2em;
+          margin-bottom: .3em;
+
+          span:first-child{
+            top:2px;
+          }
+
+          span:last-child{
+            font-family: OSBold;
+          }
+        }
+      }
+
+      .more{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width:20em;
+        padding:1em 2em;
+        border:1px solid #797979;
+        border-radius: 3px;
+        cursor: pointer;
+        transition:all linear .3s;
+
+        &:hover{
+          transform:translateY(-10px);
+          box-shadow: 0px 10px 10px 10px #737373;
+        }
+
+        span:first-child{
+          top:-1px;
+          margin-right:.5em;
+        }
+
+        span:last-child{
+          text-transform: uppercase;
+          font-weight: bold;
+          font-size:1.2em;
+        }
+      }
+    }
+  }
+
+  // 当屏幕缩小到1000px以下的时候
+  @media screen and (max-width:1000px){
+    .container{
+      display: block;
+
+      .left{
+        display: none;
+      }
+
+      .right{
+        width:100%;
+      }
+    }
+  }
+
+  @media screen and (max-width:500px){
+    padding:3em 0em;
+
+    .container{
+      .right{
+        .subject{
+          .small{
+            font-size:1.2em;
+          }
+
+          .big{
+            font-size:2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 团队team
+.team{
+  height:50em;
+  background:#111111;
 }
