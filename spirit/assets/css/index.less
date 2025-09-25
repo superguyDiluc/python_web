@@ -403,11 +403,17 @@ html{
   
   .list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
     margin-bottom: 5vh;
 
     .item{
-      width:23%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex: 0 0 230px;
 
       .cover{
         width: 40%;
