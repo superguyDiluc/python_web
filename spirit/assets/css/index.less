@@ -63,10 +63,10 @@ html{
   background:#111;
   color:#d5d5d5;
   text-align: center;
-  padding:16em 0em 6em;
+  padding: 16em 0em 6em;
   overflow: hidden;
-  background: url(../images/R-C.jpg) no-repeat;
-  background-size:  auto;
+  background: #111111;
+  background-size: auto;
 
   .title{
     font-family: OSBold;
@@ -365,6 +365,83 @@ html{
 
         .box{
           text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.services {
+  background:#ffffff;
+  padding: 6em 0em;
+  color:#222222;
+
+  .title{
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom: .8em;
+    margin-bottom: 1.2em;
+    font-family: OSLight;
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  // 段落
+  .desc{
+    width:85%;
+    font-family: OSLight;
+    font-size: 1.2em;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 8em;
+  }
+  
+  .list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+
+    .item{
+      width:23%;
+
+      .cover{
+        width: 40%;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 1.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: .5vh solid #fcac45;
+
+        transition:all linear .3s;
+
+        &:hover{
+          transform: translateY(-10px);
+          box-shadow: 0px 20px 10px 10px #797979;
+        }
+      }
+
+      .box{
+        text-align: center;
+
+        p:first-child{
+          font-size: 1.3em;
+          font-family: OSBold;
+        }
+
+        p:nth-child(2){
+          margin-top: 1vh;
+          margin-bottom: 2vh;
+          font-size: 0.9em;
+          font-family: OSLight;
         }
       }
     }
