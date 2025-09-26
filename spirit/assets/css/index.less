@@ -454,6 +454,60 @@ html{
   }
 }
 
+.clients {
+  background:#070707;
+  padding:6em 0em;
+  color:#fff;
+
+  .title {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom: .8em;
+    margin-bottom: 1.2em;
+    font-family: OSLight;
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-top: 8em;
+    margin-bottom: 8em;
+
+    .cover {
+      flex: 0 0 150px;
+    }
+  }
+
+  .more{
+    width:100%;
+    text-align: center;
+
+    span{
+      display: inline-block;
+      width:1em;
+      height:1em;
+      background:#fff;
+      transition: all linear .3s;
+      cursor: pointer;
+      margin-right:1em;
+
+      &:hover{
+        background:#fcac45;
+      }
+    }
+  }
+}
+
 // 联系我们
 .contact{
   padding:6em 0em;
