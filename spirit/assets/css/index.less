@@ -390,23 +390,25 @@ html{
       font-family: OSBold;
     }
   }
-
-  // 段落
-  .desc{
-    width:85%;
-    font-family: OSLight;
-    font-size: 1.2em;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 8em;
-  }
   
+  // 列表
   .list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-content: center;
     gap: 2em;
     margin-bottom: 5vh;
+
+    // 段落
+    .desc{
+      width: 95%;
+      font-family: OSLight;
+      font-size: 1.2em;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 6em;
+    }
 
     .item{
       display: flex;
@@ -415,6 +417,7 @@ html{
       flex-direction: column;
       flex: 0 0 230px;
 
+      // 图片
       .cover{
         width: 40%;
         aspect-ratio: 1 / 1;
@@ -435,6 +438,7 @@ html{
         }
       }
 
+      // 文本
       .box{
         text-align: center;
 
@@ -503,6 +507,89 @@ html{
 
       &:hover{
         background:#fcac45;
+      }
+    }
+  }
+}
+
+.work {
+  background:#fff;
+  padding:6em 0em;
+  color:#222222;
+
+  .title {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom: .8em;
+    margin-bottom: 1.2em;
+    font-family: OSLight;
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  // 列表
+  .list {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    // 段落
+    .desc{
+      font-family: OSLight;
+      font-size: 1.2em;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 8em;
+    }
+
+    .subnav {
+      display: flex;
+      justify-content: space-between;
+      
+      div:nth-child(1){
+        font-family: OSBold;
+      }
+
+      div:nth-child(2) {
+        font-family: OSLight;
+
+        span {
+          font-family: OSBold;
+        }
+      }
+    }
+
+    .workset {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: space-between;
+      gap: 2em;
+    }
+  }
+
+  @media screen and (max-width:600px){
+    &{
+      padding:6em 0em 3em;
+    }
+
+    .list{
+      display: block;
+      margin-bottom:3em;
+
+      .subnav {
+        margin-bottom: 3em;
+      }
+
+      .workset {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
       }
     }
   }
