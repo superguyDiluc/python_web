@@ -595,6 +595,64 @@ html{
   }
 }
 
+.testimonial {
+  background:#0b0b0b;
+  padding:6em 0em;
+  color:#fff;
+
+  .title {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    background:url('../images/title-background.png') no-repeat center bottom;
+    padding-bottom: .8em;
+    margin-bottom: 1.2em;
+    font-family: OSLight;
+
+    span{
+      font-family: OSBold;
+    }
+  }
+
+  .judge {
+    text-align: center;
+    margin-bottom: 3em;
+
+    p:nth-child(1) {
+      font-family: OSBold;
+    }
+    p:nth-child(2) {
+      font-family: OSLight;
+      color: #b2b2b2;
+      line-height: 6em;
+
+      span {
+        font-family: OSBold;
+      }
+    }
+  }
+
+  .more{
+    width:100%;
+    text-align: center;
+
+    span{
+      display: inline-block;
+      width:1em;
+      height:1em;
+      background:#fff;
+      transition: all linear .3s;
+      cursor: pointer;
+      margin-right:1em;
+
+      &:hover{
+        background:#fcac45;
+      }
+    }
+  }
+}
+
 // 联系我们
 .contact{
   padding:6em 0em;
